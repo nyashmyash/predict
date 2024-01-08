@@ -1,8 +1,5 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.orm import declarative_base
 from auth import *
-from dbprocess import DBProcess
+from db.dbprocess import DBProcess
 
 # Создание базы данных SQLite
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
@@ -15,4 +12,4 @@ Auth.add_user(SessionLocal(), "user1", "pass1")
 Auth.add_user(SessionLocal(), "user2", "pass2")
 Auth.add_user(SessionLocal(), "user3", "pass3")
 
-DBProcess.load_purchase(SessionLocal(), 'purchases.pickle')
+DBProcess.load_purchase(SessionLocal(), 'pkl/purchases.pickle')

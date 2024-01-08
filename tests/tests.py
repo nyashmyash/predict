@@ -1,4 +1,4 @@
-from dbprocess import *
+from db.dbprocess import *
 import pytest
 
 # Создаем подключение к базе данных

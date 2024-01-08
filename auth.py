@@ -1,5 +1,5 @@
 from passlib.context import CryptContext
-from dbmodels import *
+from db.dbmodels import *
 
 # Хэширование паролей
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")

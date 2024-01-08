@@ -14,9 +14,9 @@ purchase_data = [{"client": "AAAA", "product": "aaaaa"},
                  {"client": "CCCC", "product": "ggggg"},
                  {"client": "CCCC", "product": "fffff"}]
 
-with open("clients.pickle", 'wb') as f:
+with open("../pkl/clients.pickle", 'wb') as f:
     pickle.dump(clients_data, f)
-with open("products.pickle", 'wb') as f:
+with open("../pkl/products.pickle", 'wb') as f:
     pickle.dump(products_data, f)
-with open("purchases.pickle", 'wb') as f:
+with open("../pkl/purchases.pickle", 'wb') as f:
     pickle.dump(purchase_data, f)

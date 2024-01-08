@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException, Depends, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 from models import *
-from dbprocess import *
+from db.dbprocess import *
 from auth import *
 
 app = FastAPI()
